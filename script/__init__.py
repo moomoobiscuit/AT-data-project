@@ -1,0 +1,1 @@
+# allows the script directory to be used as a package
