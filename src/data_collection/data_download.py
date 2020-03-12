@@ -20,8 +20,6 @@ try:
     conn.request("GET", "/v2/gtfs/stops?%s" % params, "{body}", headers)
     response = conn.getresponse()
     data = response.read()
-    print("")
-    print(data)
     conn.close()
 except Exception as e:
     print("[Errno {0}] {1}".format(e.errno, e.strerror))
